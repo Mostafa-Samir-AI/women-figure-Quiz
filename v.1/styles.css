@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.question {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.question h3 {
+    margin: 0 0 10px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+} 
