@@ -1,266 +1,1774 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>كويز شخصيات نسائية</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body { font-family: 'Arial', sans-serif; padding: 20px; background-color: #f9f9f9; }
-        .question { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .question h3 { margin: 0 0 10px; }
-        .options label { display: block; margin-bottom: 5px; cursor: pointer; }
-        .submit-btn { padding: 10px 20px; font-size: 16px; margin-top: 20px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        .result { margin-top: 20px; font-size: 18px; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <h1>كويز شخصيات نسائية</h1>
-    <form id="quizForm">
-<div class="question"><h3>1. أول امرأة مصرية تتقلد منصب وزاري في تاريخ مصر؟</h3>
-<div class="options"><label><input type="radio" name="q1" value="درية شفيق"> درية شفيق</label>
-<label><input type="radio" name="q1" value="حكمت أبو زيد"> حكمت أبو زيد</label>
-<label><input type="radio" name="q1" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q1" value="نبوية موسى"> نبوية موسى</label>
-</div></div>
-<div class="question"><h3>2. قادت جيشًا وحكمت مصر كفرعون وكانت واحدة من أشهر النساء في التاريخ القديم؟</h3>
-<div class="options"><label><input type="radio" name="q2" value="كليوباترا"> كليوباترا</label>
-<label><input type="radio" name="q2" value="نفرتيتي"> نفرتيتي</label>
-<label><input type="radio" name="q2" value="حتشبسوت"> حتشبسوت</label>
-<label><input type="radio" name="q2" value="تيي"> تيي</label>
-</div></div>
-<div class="question"><h3>3. ناشطة نسوية نظمت أول مظاهرة نسائية ضد الاحتلال البريطاني سنة 1919؟</h3>
-<div class="options"><label><input type="radio" name="q3" value="صفية زغلول"> صفية زغلول</label>
-<label><input type="radio" name="q3" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q3" value="درية شفيق"> درية شفيق</label>
-<label><input type="radio" name="q3" value="جميلة بوحيرد"> جميلة بوحيرد</label>
-</div></div>
-<div class="question"><h3>4. مؤسسة أول مدرسة للبنات في مصر؟</h3>
-<div class="options"><label><input type="radio" name="q4" value="نبوية موسى"> نبوية موسى</label>
-<label><input type="radio" name="q4" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q4" value="ملك حفني ناصف"> ملك حفني ناصف</label>
-<label><input type="radio" name="q4" value="إنجي أفلاطون"> إنجي أفلاطون</label>
-</div></div>
-<div class="question"><h3>5. واحدة من أوائل الفنانات المصريات في السينما الصامتة؟</h3>
-<div class="options"><label><input type="radio" name="q5" value="آسيا داغر"> آسيا داغر</label>
-<label><input type="radio" name="q5" value="ليلى مراد"> ليلى مراد</label>
-<label><input type="radio" name="q5" value="أم كلثوم"> أم كلثوم</label>
-<label><input type="radio" name="q5" value="تحية كاريوكا"> تحية كاريوكا</label>
-</div></div>
-<div class="question"><h3>6. مغنية مصرية لقبت بـ'كوكب الشرق'؟</h3>
-<div class="options"><label><input type="radio" name="q6" value="ليلى مراد"> ليلى مراد</label>
-<label><input type="radio" name="q6" value="نجاة الصغيرة"> نجاة الصغيرة</label>
-<label><input type="radio" name="q6" value="شادية"> شادية</label>
-<label><input type="radio" name="q6" value="أم كلثوم"> أم كلثوم</label>
-</div></div>
-<div class="question"><h3>7. رسامة ومناضلة نسوية مصرية سُجنت بسبب آرائها السياسية؟</h3>
-<div class="options"><label><input type="radio" name="q7" value="نبوية موسى"> نبوية موسى</label>
-<label><input type="radio" name="q7" value="ملك حفني ناصف"> ملك حفني ناصف</label>
-<label><input type="radio" name="q7" value="إنجي أفلاطون"> إنجي أفلاطون</label>
-<label><input type="radio" name="q7" value="أمينة السعيد"> أمينة السعيد</label>
-</div></div>
-<div class="question"><h3>8. أول قاضية في مصر والعالم العربي؟</h3>
-<div class="options"><label><input type="radio" name="q8" value="تهاني الجبالي"> تهاني الجبالي</label>
-<label><input type="radio" name="q8" value="فاطمة البلتاجي"> فاطمة البلتاجي</label>
-<label><input type="radio" name="q8" value="ليلى مراد"> ليلى مراد</label>
-<label><input type="radio" name="q8" value="جميلة إسماعيل"> جميلة إسماعيل</label>
-</div></div>
-<div class="question"><h3>9. سياسية مصرية ورئيسة حزب الدستور؟</h3>
-<div class="options"><label><input type="radio" name="q9" value="بثينة كامل"> بثينة كامل</label>
-<label><input type="radio" name="q9" value="جميلة إسماعيل"> جميلة إسماعيل</label>
-<label><input type="radio" name="q9" value="لميس الحديدي"> لميس الحديدي</label>
-<label><input type="radio" name="q9" value="منى الشاذلي"> منى الشاذلي</label>
-</div></div>
-<div class="question"><h3>10. شاعرة ومفكرة مصرية من رواد الحركة النسوية؟</h3>
-<div class="options"><label><input type="radio" name="q10" value="ملك حفني ناصف"> ملك حفني ناصف</label>
-<label><input type="radio" name="q10" value="عائشة عبد الرحمن"> عائشة عبد الرحمن</label>
-<label><input type="radio" name="q10" value="أمينة السعيد"> أمينة السعيد</label>
-<label><input type="radio" name="q10" value="نبوية موسى"> نبوية موسى</label>
-</div></div>
-<div class="question"><h3>11. آخر فرعون من الأسرة البطلمية وكان لها علاقة سياسية مع يوليوس قيصر؟</h3>
-<div class="options"><label><input type="radio" name="q11" value="حتشبسوت"> حتشبسوت</label>
-<label><input type="radio" name="q11" value="كليوباترا السابعة"> كليوباترا السابعة</label>
-<label><input type="radio" name="q11" value="نفرتاري"> نفرتاري</label>
-<label><input type="radio" name="q11" value="تيي"> تيي</label>
-</div></div>
-<div class="question"><h3>12. أول مذيعة نشرة أخبار في التليفزيون المصري؟</h3>
-<div class="options"><label><input type="radio" name="q12" value="صفاء حجازي"> صفاء حجازي</label>
-<label><input type="radio" name="q12" value="آمال فهمي"> آمال فهمي</label>
-<label><input type="radio" name="q12" value="منى الشاذلي"> منى الشاذلي</label>
-<label><input type="radio" name="q12" value="هالة سرحان"> هالة سرحان</label>
-</div></div>
-<div class="question"><h3>13. كاتبة وصحفية مصرية، ومحررة أول مجلة نسائية في الوطن العربي؟</h3>
-<div class="options"><label><input type="radio" name="q13" value="نبوية موسى"> نبوية موسى</label>
-<label><input type="radio" name="q13" value="أمينة السعيد"> أمينة السعيد</label>
-<label><input type="radio" name="q13" value="درية شفيق"> درية شفيق</label>
-<label><input type="radio" name="q13" value="فاطمة نعمت راشد"> فاطمة نعمت راشد</label>
-</div></div>
-<div class="question"><h3>14. طبيبة مصرية رائدة وأول امرأة تحصل على شهادة الطب من جامعة القاهرة؟</h3>
-<div class="options"><label><input type="radio" name="q14" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q14" value="نبوية موسى"> نبوية موسى</label>
-<label><input type="radio" name="q14" value="سامية عبد الرحمن"> سامية عبد الرحمن</label>
-<label><input type="radio" name="q14" value="هيلانة سيداروس"> هيلانة سيداروس</label>
-</div></div>
-<div class="question"><h3>15. فنانة مصرية شهيرة جسدت أدوارًا قوية في المسرح والسينما وتوفيت في حادث؟</h3>
-<div class="options"><label><input type="radio" name="q15" value="سعاد حسني"> سعاد حسني</label>
-<label><input type="radio" name="q15" value="فاتن حمامة"> فاتن حمامة</label>
-<label><input type="radio" name="q15" value="هند رستم"> هند رستم</label>
-<label><input type="radio" name="q15" value="شادية"> شادية</label>
-</div></div>
-<div class="question"><h3>16. ناشطة نسوية ومؤسسة الاتحاد النسائي المصري عام 1923؟</h3>
-<div class="options"><label><input type="radio" name="q16" value="ملك حفني ناصف"> ملك حفني ناصف</label>
-<label><input type="radio" name="q16" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q16" value="درية شفيق"> درية شفيق</label>
-<label><input type="radio" name="q16" value="صفية زغلول"> صفية زغلول</label>
-</div></div>
-<div class="question"><h3>17. فنانة مصرية لقبت بـ'سيدة الشاشة العربية'؟</h3>
-<div class="options"><label><input type="radio" name="q17" value="شادية"> شادية</label>
-<label><input type="radio" name="q17" value="نجلاء فتحي"> نجلاء فتحي</label>
-<label><input type="radio" name="q17" value="فاتن حمامة"> فاتن حمامة</label>
-<label><input type="radio" name="q17" value="ماجدة الخطيب"> ماجدة الخطيب</label>
-</div></div>
-<div class="question"><h3>18. مغنية وممثلة مصرية شاركت في العديد من الأفلام الوطنية؟</h3>
-<div class="options"><label><input type="radio" name="q18" value="ليلى مراد"> ليلى مراد</label>
-<label><input type="radio" name="q18" value="نجاة الصغيرة"> نجاة الصغيرة</label>
-<label><input type="radio" name="q18" value="سعاد حسني"> سعاد حسني</label>
-<label><input type="radio" name="q18" value="صباح"> صباح</label>
-</div></div>
-<div class="question"><h3>19. أول وزيرة للبيئة في مصر؟</h3>
-<div class="options"><label><input type="radio" name="q19" value="نادية مكرم عبيد"> نادية مكرم عبيد</label>
-<label><input type="radio" name="q19" value="مشيرة خطاب"> مشيرة خطاب</label>
-<label><input type="radio" name="q19" value="فايزة أبو النجا"> فايزة أبو النجا</label>
-<label><input type="radio" name="q19" value="جيهان السادات"> جيهان السادات</label>
-</div></div>
-<div class="question"><h3>20. زوجة الرئيس الراحل أنور السادات وناشطة اجتماعية بارزة؟</h3>
-<div class="options"><label><input type="radio" name="q20" value="تحية عبد الناصر"> تحية عبد الناصر</label>
-<label><input type="radio" name="q20" value="جيهان السادات"> جيهان السادات</label>
-<label><input type="radio" name="q20" value="رقية السادات"> رقية السادات</label>
-<label><input type="radio" name="q20" value="سوزان مبارك"> سوزان مبارك</label>
-</div></div>
-<div class="question"><h3>21. أول رائدة فضاء مصرية التحقت بوكالة ناسا؟</h3>
-<div class="options"><label><input type="radio" name="q21" value="سارة صبري"> سارة صبري</label>
-<label><input type="radio" name="q21" value="منى زكي"> منى زكي</label>
-<label><input type="radio" name="q21" value="فاطمة ناعوت"> فاطمة ناعوت</label>
-<label><input type="radio" name="q21" value="سميرة موسى"> سميرة موسى</label>
-</div></div>
-<div class="question"><h3>22. عالمة ذرّة مصرية لُقبت بـ'الشهيدة' بسبب وفاتها الغامضة في أمريكا؟</h3>
-<div class="options"><label><input type="radio" name="q22" value="سميرة موسى"> سميرة موسى</label>
-<label><input type="radio" name="q22" value="هدى شعراوي"> هدى شعراوي</label>
-<label><input type="radio" name="q22" value="إنجي أفلاطون"> إنجي أفلاطون</label>
-<label><input type="radio" name="q22" value="هيلانة سيداروس"> هيلانة سيداروس</label>
-</div></div>
-<div class="question"><h3>23. أول وزيرة للتعاون الدولي في مصر؟</h3>
-<div class="options"><label><input type="radio" name="q23" value="نادية عبيد"> نادية عبيد</label>
-<label><input type="radio" name="q23" value="مشيرة خطاب"> مشيرة خطاب</label>
-<label><input type="radio" name="q23" value="فايزة أبو النجا"> فايزة أبو النجا</label>
-<label><input type="radio" name="q23" value="عائشة عبد الرحمن"> عائشة عبد الرحمن</label>
-</div></div>
-<div class="question"><h3>24. أول مصرية تتقلد منصب رئيس جامعة؟</h3>
-<div class="options"><label><input type="radio" name="q24" value="نبوية موسى"> نبوية موسى</label>
-<label><input type="radio" name="q24" value="تهاني الجبالي"> تهاني الجبالي</label>
-<label><input type="radio" name="q24" value="سميرة مراد"> سميرة مراد</label>
-<label><input type="radio" name="q24" value="درية شفيق"> درية شفيق</label>
-</div></div>
-<div class="question"><h3>25. فنانة مصرية قدمت أدوارًا مميزة في الدراما الاجتماعية والتراجيدية، وتزوجت من عمر الشريف؟</h3>
-<div class="options"><label><input type="radio" name="q25" value="فاتن حمامة"> فاتن حمامة</label>
-<label><input type="radio" name="q25" value="ليلى مراد"> ليلى مراد</label>
-<label><input type="radio" name="q25" value="شادية"> شادية</label>
-<label><input type="radio" name="q25" value="هند رستم"> هند رستم</label>
-</div></div>
-<div class="question"><h3>26. صحفية وكاتبة مصرية، كانت رمزًا للمرأة المثقفة في الصحافة؟</h3>
-<div class="options"><label><input type="radio" name="q26" value="فاطمة ناعوت"> فاطمة ناعوت</label>
-<label><input type="radio" name="q26" value="أمينة السعيد"> أمينة السعيد</label>
-<label><input type="radio" name="q26" value="صفاء حجازي"> صفاء حجازي</label>
-<label><input type="radio" name="q26" value="عائشة عبد الرحمن"> عائشة عبد الرحمن</label>
-</div></div>
-<div class="question"><h3>27. عالمة مصرية في مجال الأدب واللغة، ولقبت بـ'بنت الشاطئ'؟</h3>
-<div class="options"><label><input type="radio" name="q27" value="عائشة عبد الرحمن"> عائشة عبد الرحمن</label>
-<label><input type="radio" name="q27" value="ملك حفني ناصف"> ملك حفني ناصف</label>
-<label><input type="radio" name="q27" value="درية شفيق"> درية شفيق</label>
-<label><input type="radio" name="q27" value="إنجي أفلاطون"> إنجي أفلاطون</label>
-</div></div>
-<div class="question"><h3>28. ناشطة في حقوق الإنسان ورئيسة المجلس القومي للطفولة والأمومة سابقًا؟</h3>
-<div class="options"><label><input type="radio" name="q28" value="سوزان مبارك"> سوزان مبارك</label>
-<label><input type="radio" name="q28" value="مشيرة خطاب"> مشيرة خطاب</label>
-<label><input type="radio" name="q28" value="تهاني الجبالي"> تهاني الجبالي</label>
-<label><input type="radio" name="q28" value="جميلة إسماعيل"> جميلة إسماعيل</label>
-</div></div>
-<div class="question"><h3>29. فنانة استعراضية شهيرة برزت في السينما المصرية ولقبت بملكة الرقص الشرقي؟</h3>
-<div class="options"><label><input type="radio" name="q29" value="سامية جمال"> سامية جمال</label>
-<label><input type="radio" name="q29" value="تحية كاريوكا"> تحية كاريوكا</label>
-<label><input type="radio" name="q29" value="نعيمة عاكف"> نعيمة عاكف</label>
-<label><input type="radio" name="q29" value="لوسي"> لوسي</label>
-</div></div>
-<div class="question"><h3>30. فنانة مصرية شهيرة بدأت بالغناء ثم اتجهت للتمثيل وقدمت أفلامًا وطنية؟</h3>
-<div class="options"><label><input type="radio" name="q30" value="شادية"> شادية</label>
-<label><input type="radio" name="q30" value="وردة"> وردة</label>
-<label><input type="radio" name="q30" value="ماجدة"> ماجدة</label>
-<label><input type="radio" name="q30" value="ليلى مراد"> ليلى مراد</label>
-</div></div>
-<div class="question"><h3>31. أميرة ديزني انضمت للجيش بدلًا من والدها؟</h3>
-<div class="options"><label><input type="radio" name="q31" value="آنا"> آنا</label>
-<label><input type="radio" name="q31" value="مولان"> مولان</label>
-<label><input type="radio" name="q31" value="إلسا"> إلسا</label>
-<label><input type="radio" name="q31" value="ياسمين"> ياسمين</label>
-</div></div>
-<div class="question"><h3>32. فتاة فقيرة تتحول إلى أميرة بعد أن يساعدها الأمير وحذاء زجاجي؟</h3>
-<div class="options"><label><input type="radio" name="q32" value="سندريلا"> سندريلا</label>
-<label><input type="radio" name="q32" value="رابونزل"> رابونزل</label>
-<label><input type="radio" name="q32" value="أرييل"> أرييل</label>
-<label><input type="radio" name="q32" value="ميغ"> ميغ</label>
-</div></div>
-<div class="question"><h3>33. أميرة عاشت في قصر وصاحبة نمر اسمه 'راجا'؟</h3>
-<div class="options"><label><input type="radio" name="q33" value="أورورا"> أورورا</label>
-<label><input type="radio" name="q33" value="ياسمين"> ياسمين</label>
-<label><input type="radio" name="q33" value="إلسا"> إلسا</label>
-<label><input type="radio" name="q33" value="تيانا"> تيانا</label>
-</div></div>
-<div class="question"><h3>34. أميرة بحر تقع في حب إنسان وتترك عالمها لأجله؟</h3>
-<div class="options"><label><input type="radio" name="q34" value="ميغ"> ميغ</label>
-<label><input type="radio" name="q34" value="أرييل"> أرييل</label>
-<label><input type="radio" name="q34" value="سندريلا"> سندريلا</label>
-<label><input type="radio" name="q34" value="مولان"> مولان</label>
-</div></div>
-<div class="question"><h3>35. أميرة محبوسة في برج طويل وشعرها سحري؟</h3>
-<div class="options"><label><input type="radio" name="q35" value="إلسا"> إلسا</label>
-<label><input type="radio" name="q35" value="رابونزل"> رابونزل</label>
-<label><input type="radio" name="q35" value="أورورا"> أورورا</label>
-<label><input type="radio" name="q35" value="تيانا"> تيانا</label>
-</div></div>
-<div class="question"><h3>36. بطلة فيلم Brave وتُجيد الرماية؟</h3>
-<div class="options"><label><input type="radio" name="q36" value="مولان"> مولان</label>
-<label><input type="radio" name="q36" value="ميريدا"> ميريدا</label>
-<label><input type="radio" name="q36" value="أرييل"> أرييل</label>
-<label><input type="radio" name="q36" value="سندريلا"> سندريلا</label>
-</div></div>
-<div class="question"><h3>37. شخصية كرتونية تعمل طباخة وتفتح مطعمها الخاص؟</h3>
-<div class="options"><label><input type="radio" name="q37" value="تيانا"> تيانا</label>
-<label><input type="radio" name="q37" value="ريمي"> ريمي</label>
-<label><input type="radio" name="q37" value="أورورا"> أورورا</label>
-<label><input type="radio" name="q37" value="ميغ"> ميغ</label>
-</div></div>
-<div class="question"><h3>38. أخت ملكة الجليد في فيلم Frozen؟</h3>
-<div class="options"><label><input type="radio" name="q38" value="ميريدا"> ميريدا</label>
-<label><input type="radio" name="q38" value="مولان"> مولان</label>
-<label><input type="radio" name="q38" value="آنا"> آنا</label>
-<label><input type="radio" name="q38" value="سندريلا"> سندريلا</label>
-</div></div>
-<div class="question"><h3>39. أميرة تقع في نوم عميق بسبب تعويذة؟</h3>
-<div class="options"><label><input type="radio" name="q39" value="سندريلا"> سندريلا</label>
-<label><input type="radio" name="q39" value="أورورا"> أورورا</label>
-<label><input type="radio" name="q39" value="إلسا"> إلسا</label>
-<label><input type="radio" name="q39" value="تيانا"> تيانا</label>
-</div></div>
-<div class="question"><h3>40. فتاة شجاعة تتحدى الجليد لإنقاذ أختها؟</h3>
-<div class="options"><label><input type="radio" name="q40" value="ميريدا"> ميريدا</label>
-<label><input type="radio" name="q40" value="آنا"> آنا</label>
-<label><input type="radio" name="q40" value="ياسمين"> ياسمين</label>
-<label><input type="radio" name="q40" value="ميغ"> ميغ</label>
-</div></div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-header">
+        <h1>كويز شخصيات نسائية</h1>
+      </div>
 
-    <button type="submit" class="submit-btn">تأكيد الإجابات</button>
-    <div class="result" id="result"></div>
-    </form>
+      <div class="quiz-wrapper">
+        <div class="quiz-content">
+          <div class="progress-text" id="progress-text">السؤال 1 من 40</div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+
+          <form id="quizForm">
+            <div class="question-container active" id="q1">
+              <div class="question">
+                1. أول امرأة مصرية تتقلد منصب وزاري في تاريخ مصر؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q1-option1"
+                    name="q1"
+                    value="درية شفيق"
+                  />
+                  <label for="q1-option1">درية شفيق</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q1-option2"
+                    name="q1"
+                    value="حكمت أبو زيد"
+                  />
+                  <label for="q1-option2">حكمت أبو زيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q1-option3"
+                    name="q1"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q1-option3">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q1-option4"
+                    name="q1"
+                    value="نبوية موسى"
+                  />
+                  <label for="q1-option4">نبوية موسى</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q2">
+              <div class="question">
+                2. قادت جيشًا وحكمت مصر كفرعون وكانت واحدة من أشهر النساء في
+                التاريخ القديم؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q2-option1"
+                    name="q2"
+                    value="كليوباترا"
+                  />
+                  <label for="q2-option1">كليوباترا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q2-option2"
+                    name="q2"
+                    value="نفرتيتي"
+                  />
+                  <label for="q2-option2">نفرتيتي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q2-option3"
+                    name="q2"
+                    value="حتشبسوت"
+                  />
+                  <label for="q2-option3">حتشبسوت</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q2-option4" name="q2" value="تيي" />
+                  <label for="q2-option4">تيي</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q3">
+              <div class="question">
+                3. ناشطة نسوية نظمت أول مظاهرة نسائية ضد الاحتلال البريطاني سنة
+                1919؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q3-option1"
+                    name="q3"
+                    value="صفية زغلول"
+                  />
+                  <label for="q3-option1">صفية زغلول</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q3-option2"
+                    name="q3"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q3-option2">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q3-option3"
+                    name="q3"
+                    value="درية شفيق"
+                  />
+                  <label for="q3-option3">درية شفيق</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q3-option4"
+                    name="q3"
+                    value="جميلة بوحيرد"
+                  />
+                  <label for="q3-option4">جميلة بوحيرد</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q4">
+              <div class="question">4. مؤسسة أول مدرسة للبنات في مصر؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q4-option1"
+                    name="q4"
+                    value="نبوية موسى"
+                  />
+                  <label for="q4-option1">نبوية موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q4-option2"
+                    name="q4"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q4-option2">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q4-option3"
+                    name="q4"
+                    value="ملك حفني ناصف"
+                  />
+                  <label for="q4-option3">ملك حفني ناصف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q4-option4"
+                    name="q4"
+                    value="إنجي أفلاطون"
+                  />
+                  <label for="q4-option4">إنجي أفلاطون</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q5">
+              <div class="question">
+                5. واحدة من أوائل الفنانات المصريات في السينما الصامتة؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q5-option1"
+                    name="q5"
+                    value="آسيا داغر"
+                  />
+                  <label for="q5-option1">آسيا داغر</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q5-option2"
+                    name="q5"
+                    value="ليلى مراد"
+                  />
+                  <label for="q5-option2">ليلى مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q5-option3"
+                    name="q5"
+                    value="أم كلثوم"
+                  />
+                  <label for="q5-option3">أم كلثوم</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q5-option4"
+                    name="q5"
+                    value="تحية كاريوكا"
+                  />
+                  <label for="q5-option4">تحية كاريوكا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q6">
+              <div class="question">6. مغنية مصرية لقبت بـ'كوكب الشرق'؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q6-option1"
+                    name="q6"
+                    value="ليلى مراد"
+                  />
+                  <label for="q6-option1">ليلى مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q6-option2"
+                    name="q6"
+                    value="نجاة الصغيرة"
+                  />
+                  <label for="q6-option2">نجاة الصغيرة</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q6-option3" name="q6" value="شادية" />
+                  <label for="q6-option3">شادية</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q6-option4"
+                    name="q6"
+                    value="أم كلثوم"
+                  />
+                  <label for="q6-option4">أم كلثوم</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q7">
+              <div class="question">
+                7. رسامة ومناضلة نسوية مصرية سُجنت بسبب آرائها السياسية؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q7-option1"
+                    name="q7"
+                    value="نبوية موسى"
+                  />
+                  <label for="q7-option1">نبوية موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q7-option2"
+                    name="q7"
+                    value="ملك حفني ناصف"
+                  />
+                  <label for="q7-option2">ملك حفني ناصف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q7-option3"
+                    name="q7"
+                    value="إنجي أفلاطون"
+                  />
+                  <label for="q7-option3">إنجي أفلاطون</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q7-option4"
+                    name="q7"
+                    value="أمينة السعيد"
+                  />
+                  <label for="q7-option4">أمينة السعيد</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q8">
+              <div class="question">8. أول قاضية في مصر والعالم العربي؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q8-option1"
+                    name="q8"
+                    value="تهاني الجبالي"
+                  />
+                  <label for="q8-option1">تهاني الجبالي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q8-option2"
+                    name="q8"
+                    value="فاطمة البلتاجي"
+                  />
+                  <label for="q8-option2">فاطمة البلتاجي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q8-option3"
+                    name="q8"
+                    value="ليلى مراد"
+                  />
+                  <label for="q8-option3">ليلى مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q8-option4"
+                    name="q8"
+                    value="جميلة إسماعيل"
+                  />
+                  <label for="q8-option4">جميلة إسماعيل</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q9">
+              <div class="question">9. سياسية مصرية ورئيسة حزب الدستور؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q9-option1"
+                    name="q9"
+                    value="بثينة كامل"
+                  />
+                  <label for="q9-option1">بثينة كامل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q9-option2"
+                    name="q9"
+                    value="جميلة إسماعيل"
+                  />
+                  <label for="q9-option2">جميلة إسماعيل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q9-option3"
+                    name="q9"
+                    value="لميس الحديدي"
+                  />
+                  <label for="q9-option3">لميس الحديدي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q9-option4"
+                    name="q9"
+                    value="منى الشاذلي"
+                  />
+                  <label for="q9-option4">منى الشاذلي</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q10">
+              <div class="question">
+                10. شاعرة ومفكرة مصرية من رواد الحركة النسوية؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q10-option1"
+                    name="q10"
+                    value="ملك حفني ناصف"
+                  />
+                  <label for="q10-option1">ملك حفني ناصف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q10-option2"
+                    name="q10"
+                    value="عائشة عبد الرحمن"
+                  />
+                  <label for="q10-option2">عائشة عبد الرحمن</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q10-option3"
+                    name="q10"
+                    value="أمينة السعيد"
+                  />
+                  <label for="q10-option3">أمينة السعيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q10-option4"
+                    name="q10"
+                    value="نبوية موسى"
+                  />
+                  <label for="q10-option4">نبوية موسى</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q11">
+              <div class="question">
+                11. آخر فرعون من الأسرة البطلمية وكان لها علاقة سياسية مع يوليوس
+                قيصر؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q11-option1"
+                    name="q11"
+                    value="حتشبسوت"
+                  />
+                  <label for="q11-option1">حتشبسوت</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q11-option2"
+                    name="q11"
+                    value="كليوباترا السابعة"
+                  />
+                  <label for="q11-option2">كليوباترا السابعة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q11-option3"
+                    name="q11"
+                    value="نفرتاري"
+                  />
+                  <label for="q11-option3">نفرتاري</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q11-option4" name="q11" value="تيي" />
+                  <label for="q11-option4">تيي</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q12">
+              <div class="question">
+                12. أول مذيعة نشرة أخبار في التليفزيون المصري؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q12-option1"
+                    name="q12"
+                    value="صفاء حجازي"
+                  />
+                  <label for="q12-option1">صفاء حجازي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q12-option2"
+                    name="q12"
+                    value="آمال فهمي"
+                  />
+                  <label for="q12-option2">آمال فهمي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q12-option3"
+                    name="q12"
+                    value="منى الشاذلي"
+                  />
+                  <label for="q12-option3">منى الشاذلي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q12-option4"
+                    name="q12"
+                    value="هالة سرحان"
+                  />
+                  <label for="q12-option4">هالة سرحان</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q13">
+              <div class="question">
+                13. كاتبة وصحفية مصرية ومحررة أول مجلة نسائية في الوطن العربي؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q13-option1"
+                    name="q13"
+                    value="نبوية موسى"
+                  />
+                  <label for="q13-option1">نبوية موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q13-option2"
+                    name="q13"
+                    value="أمينة السعيد"
+                  />
+                  <label for="q13-option2">أمينة السعيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q13-option3"
+                    name="q13"
+                    value="درية شفيق"
+                  />
+                  <label for="q13-option3">درية شفيق</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q13-option4"
+                    name="q13"
+                    value="فاطمة نعمت راشد"
+                  />
+                  <label for="q13-option4">فاطمة نعمت راشد</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q14">
+              <div class="question">
+                14. طبيبة مصرية رائدة وأول امرأة تحصل على شهادة الطب من جامعة
+                القاهرة؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q14-option1"
+                    name="q14"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q14-option1">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q14-option2"
+                    name="q14"
+                    value="نبوية موسى"
+                  />
+                  <label for="q14-option2">نبوية موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q14-option3"
+                    name="q14"
+                    value="سامية عبد الرحمن"
+                  />
+                  <label for="q14-option3">سامية عبد الرحمن</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q14-option4"
+                    name="q14"
+                    value="هيلانة سيداروس"
+                  />
+                  <label for="q14-option4">هيلانة سيداروس</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q15">
+              <div class="question">
+                15. فنانة مصرية شهيرة جسدت أدوارًا قوية في المسرح والسينما
+                وتوفيت في حادث؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q15-option1"
+                    name="q15"
+                    value="سعاد حسني"
+                  />
+                  <label for="q15-option1">سعاد حسني</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q15-option2"
+                    name="q15"
+                    value="فاتن حمامة"
+                  />
+                  <label for="q15-option2">فاتن حمامة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q15-option3"
+                    name="q15"
+                    value="هند رستم"
+                  />
+                  <label for="q15-option3">هند رستم</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q15-option4"
+                    name="q15"
+                    value="شادية"
+                  />
+                  <label for="q15-option4">شادية</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q16">
+              <div class="question">
+                16. ناشطة نسوية ومؤسسة الاتحاد النسائي المصري عام 1923؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q16-option1"
+                    name="q16"
+                    value="ملك حفني ناصف"
+                  />
+                  <label for="q16-option1">ملك حفني ناصف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q16-option2"
+                    name="q16"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q16-option2">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q16-option3"
+                    name="q16"
+                    value="درية شفيق"
+                  />
+                  <label for="q16-option3">درية شفيق</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q16-option4"
+                    name="q16"
+                    value="صفية زغلول"
+                  />
+                  <label for="q16-option4">صفية زغلول</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q17">
+              <div class="question">
+                17. فنانة مصرية لقبت بـ'سيدة الشاشة العربية'؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q17-option1"
+                    name="q17"
+                    value="شادية"
+                  />
+                  <label for="q17-option1">شادية</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q17-option2"
+                    name="q17"
+                    value="نجلاء فتحي"
+                  />
+                  <label for="q17-option2">نجلاء فتحي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q17-option3"
+                    name="q17"
+                    value="فاتن حمامة"
+                  />
+                  <label for="q17-option3">فاتن حمامة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q17-option4"
+                    name="q17"
+                    value="ماجدة الخطيب"
+                  />
+                  <label for="q17-option4">ماجدة الخطيب</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q18">
+              <div class="question">
+                18. مغنية وممثلة مصرية شاركت في العديد من الأفلام الوطنية؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q18-option1"
+                    name="q18"
+                    value="ليلى مراد"
+                  />
+                  <label for="q18-option1">ليلى مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q18-option2"
+                    name="q18"
+                    value="نجاة الصغيرة"
+                  />
+                  <label for="q18-option2">نجاة الصغيرة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q18-option3"
+                    name="q18"
+                    value="سعاد حسني"
+                  />
+                  <label for="q18-option3">سعاد حسني</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q18-option4"
+                    name="q18"
+                    value="صباح"
+                  />
+                  <label for="q18-option4">صباح</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q19">
+              <div class="question">19. أول وزيرة للبيئة في مصر؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q19-option1"
+                    name="q19"
+                    value="نادية مكرم عبيد"
+                  />
+                  <label for="q19-option1">نادية مكرم عبيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q19-option2"
+                    name="q19"
+                    value="مشيرة خطاب"
+                  />
+                  <label for="q19-option2">مشيرة خطاب</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q19-option3"
+                    name="q19"
+                    value="فايزة أبو النجا"
+                  />
+                  <label for="q19-option3">فايزة أبو النجا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q19-option4"
+                    name="q19"
+                    value="جيهان السادات"
+                  />
+                  <label for="q19-option4">جيهان السادات</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q20">
+              <div class="question">
+                20. زوجة الرئيس الراحل أنور السادات وناشطة اجتماعية بارزة؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q20-option1"
+                    name="q20"
+                    value="تحية عبد الناصر"
+                  />
+                  <label for="q20-option1">تحية عبد الناصر</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q20-option2"
+                    name="q20"
+                    value="جيهان السادات"
+                  />
+                  <label for="q20-option2">جيهان السادات</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q20-option3"
+                    name="q20"
+                    value="رقية السادات"
+                  />
+                  <label for="q20-option3">رقية السادات</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q20-option4"
+                    name="q20"
+                    value="سوزان مبارك"
+                  />
+                  <label for="q20-option4">سوزان مبارك</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q21">
+              <div class="question">
+                21. أول رائدة فضاء مصرية التحقت بوكالة ناسا؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q21-option1"
+                    name="q21"
+                    value="سارة صبري"
+                  />
+                  <label for="q21-option1">سارة صبري</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q21-option2"
+                    name="q21"
+                    value="منى زكي"
+                  />
+                  <label for="q21-option2">منى زكي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q21-option3"
+                    name="q21"
+                    value="فاطمة ناعوت"
+                  />
+                  <label for="q21-option3">فاطمة ناعوت</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q21-option4"
+                    name="q21"
+                    value="سميرة موسى"
+                  />
+                  <label for="q21-option4">سميرة موسى</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q22">
+              <div class="question">
+                22. عالمة ذرّة مصرية لُقبت بـ'الشهيدة' بسبب وفاتها الغامضة في
+                أمريكا؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q22-option1"
+                    name="q22"
+                    value="سميرة موسى"
+                  />
+                  <label for="q22-option1">سميرة موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q22-option2"
+                    name="q22"
+                    value="هدى شعراوي"
+                  />
+                  <label for="q22-option2">هدى شعراوي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q22-option3"
+                    name="q22"
+                    value="إنجي أفلاطون"
+                  />
+                  <label for="q22-option3">إنجي أفلاطون</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q22-option4"
+                    name="q22"
+                    value="هيلانة سيداروس"
+                  />
+                  <label for="q22-option4">هيلانة سيداروس</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q23">
+              <div class="question">23. أول وزيرة للتعاون الدولي في مصر؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q23-option1"
+                    name="q23"
+                    value="نادية عبيد"
+                  />
+                  <label for="q23-option1">نادية عبيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q23-option2"
+                    name="q23"
+                    value="مشيرة خطاب"
+                  />
+                  <label for="q23-option2">مشيرة خطاب</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q23-option3"
+                    name="q23"
+                    value="فايزة أبو النجا"
+                  />
+                  <label for="q23-option3">فايزة أبو النجا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q23-option4"
+                    name="q23"
+                    value="عائشة عبد الرحمن"
+                  />
+                  <label for="q23-option4">عائشة عبد الرحمن</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q24">
+              <div class="question">24. أول مصرية تتقلد منصب رئيس جامعة؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q24-option1"
+                    name="q24"
+                    value="نبوية موسى"
+                  />
+                  <label for="q24-option1">نبوية موسى</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q24-option2"
+                    name="q24"
+                    value="تهاني الجبالي"
+                  />
+                  <label for="q24-option2">تهاني الجبالي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q24-option3"
+                    name="q24"
+                    value="سميرة مراد"
+                  />
+                  <label for="q24-option3">سميرة مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q24-option4"
+                    name="q24"
+                    value="درية شفيق"
+                  />
+                  <label for="q24-option4">درية شفيق</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q25">
+              <div class="question">
+                25. فنانة مصرية قدمت أدوارًا مميزة في الدراما الاجتماعية
+                والتراجيدية، وتزوجت من عمر الشريف؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q25-option1"
+                    name="q25"
+                    value="فاتن حمامة"
+                  />
+                  <label for="q25-option1">فاتن حمامة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q25-option2"
+                    name="q25"
+                    value="ليلى مراد"
+                  />
+                  <label for="q25-option2">ليلى مراد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q25-option3"
+                    name="q25"
+                    value="شادية"
+                  />
+                  <label for="q25-option3">شادية</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q25-option4"
+                    name="q25"
+                    value="هند رستم"
+                  />
+                  <label for="q25-option4">هند رستم</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q26">
+              <div class="question">
+                26. صحفية وكاتبة مصرية، كانت رمزًا للمرأة المثقفة في الصحافة؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q26-option1"
+                    name="q26"
+                    value="فاطمة ناعوت"
+                  />
+                  <label for="q26-option1">فاطمة ناعوت</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q26-option2"
+                    name="q26"
+                    value="أمينة السعيد"
+                  />
+                  <label for="q26-option2">أمينة السعيد</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q26-option3"
+                    name="q26"
+                    value="صفاء حجازي"
+                  />
+                  <label for="q26-option3">صفاء حجازي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q26-option4"
+                    name="q26"
+                    value="عائشة عبد الرحمن"
+                  />
+                  <label for="q26-option4">عائشة عبد الرحمن</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q27">
+              <div class="question">
+                27. عالمة مصرية في مجال الأدب واللغة، ولقبت بـ'بنت الشاطئ'؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q27-option1"
+                    name="q27"
+                    value="عائشة عبد الرحمن"
+                  />
+                  <label for="q27-option1">عائشة عبد الرحمن</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q27-option2"
+                    name="q27"
+                    value="ملك حفني ناصف"
+                  />
+                  <label for="q27-option2">ملك حفني ناصف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q27-option3"
+                    name="q27"
+                    value="درية شفيق"
+                  />
+                  <label for="q27-option3">درية شفيق</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q27-option4"
+                    name="q27"
+                    value="إنجي أفلاطون"
+                  />
+                  <label for="q27-option4">إنجي أفلاطون</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q28">
+              <div class="question">
+                28. ناشطة في حقوق الإنسان ورئيسة المجلس القومي للطفولة والأمومة
+                سابقًا؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q28-option1"
+                    name="q28"
+                    value="سوزان مبارك"
+                  />
+                  <label for="q28-option1">سوزان مبارك</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q28-option2"
+                    name="q28"
+                    value="مشيرة خطاب"
+                  />
+                  <label for="q28-option2">مشيرة خطاب</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q28-option3"
+                    name="q28"
+                    value="تهاني الجبالي"
+                  />
+                  <label for="q28-option3">تهاني الجبالي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q28-option4"
+                    name="q28"
+                    value="جميلة إسماعيل"
+                  />
+                  <label for="q28-option4">جميلة إسماعيل</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q29">
+              <div class="question">
+                29. فنانة استعراضية شهيرة برزت في السينما المصرية ولقبت بملكة
+                الرقص الشرقي؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q29-option1"
+                    name="q29"
+                    value="سامية جمال"
+                  />
+                  <label for="q29-option1">سامية جمال</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q29-option2"
+                    name="q29"
+                    value="تحية كاريوكا"
+                  />
+                  <label for="q29-option2">تحية كاريوكا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q29-option3"
+                    name="q29"
+                    value="نعيمة عاكف"
+                  />
+                  <label for="q29-option3">نعيمة عاكف</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q29-option4"
+                    name="q29"
+                    value="لوسي"
+                  />
+                  <label for="q29-option4">لوسي</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q30">
+              <div class="question">
+                30. فنانة مصرية شهيرة بدأت بالغناء ثم اتجهت للتمثيل وقدمت
+                أفلامًا وطنية؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q30-option1"
+                    name="q30"
+                    value="شادية"
+                  />
+                  <label for="q30-option1">شادية</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q30-option2"
+                    name="q30"
+                    value="وردة"
+                  />
+                  <label for="q30-option2">وردة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q30-option3"
+                    name="q30"
+                    value="ماجدة"
+                  />
+                  <label for="q30-option3">ماجدة</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q30-option4"
+                    name="q30"
+                    value="ليلى مراد"
+                  />
+                  <label for="q30-option4">ليلى مراد</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q31">
+              <div class="question">
+                31. أميرة ديزني انضمت للجيش بدلًا من والدها؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input type="radio" id="q31-option1" name="q31" value="آنا" />
+                  <label for="q31-option1">آنا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q31-option2"
+                    name="q31"
+                    value="مولان"
+                  />
+                  <label for="q31-option2">مولان</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q31-option3"
+                    name="q31"
+                    value="إلسا"
+                  />
+                  <label for="q31-option3">إلسا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q31-option4"
+                    name="q31"
+                    value="ياسمين"
+                  />
+                  <label for="q31-option4">ياسمين</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q32">
+              <div class="question">
+                32. فتاة فقيرة تتحول إلى أميرة بعد أن يساعدها الأمير وحذاء
+                زجاجي؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q32-option1"
+                    name="q32"
+                    value="سندريلا"
+                  />
+                  <label for="q32-option1">سندريلا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q32-option2"
+                    name="q32"
+                    value="رابونزل"
+                  />
+                  <label for="q32-option2">رابونزل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q32-option3"
+                    name="q32"
+                    value="أرييل"
+                  />
+                  <label for="q32-option3">أرييل</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q32-option4" name="q32" value="ميغ" />
+                  <label for="q32-option4">ميغ</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q33">
+              <div class="question">
+                33. أميرة عاشت في قصر وصاحبة نمر اسمه 'راجا'؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q33-option1"
+                    name="q33"
+                    value="أورورا"
+                  />
+                  <label for="q33-option1">أورورا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q33-option2"
+                    name="q33"
+                    value="ياسمين"
+                  />
+                  <label for="q33-option2">ياسمين</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q33-option3"
+                    name="q33"
+                    value="إلسا"
+                  />
+                  <label for="q33-option3">إلسا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q33-option4"
+                    name="q33"
+                    value="تيانا"
+                  />
+                  <label for="q33-option4">تيانا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q34">
+              <div class="question">
+                34. أميرة بحر تقع في حب إنسان وتترك عالمها لأجله؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input type="radio" id="q34-option1" name="q34" value="ميغ" />
+                  <label for="q34-option1">ميغ</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q34-option2"
+                    name="q34"
+                    value="أرييل"
+                  />
+                  <label for="q34-option2">أرييل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q34-option3"
+                    name="q34"
+                    value="سندريلا"
+                  />
+                  <label for="q34-option3">سندريلا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q34-option4"
+                    name="q34"
+                    value="مولان"
+                  />
+                  <label for="q34-option4">مولان</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q35">
+              <div class="question">
+                35. أميرة محبوسة في برج طويل وشعرها سحري؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q35-option1"
+                    name="q35"
+                    value="إلسا"
+                  />
+                  <label for="q35-option1">إلسا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q35-option2"
+                    name="q35"
+                    value="رابونزل"
+                  />
+                  <label for="q35-option2">رابونزل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q35-option3"
+                    name="q35"
+                    value="أورорا"
+                  />
+                  <label for="q35-option3">أورورا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q35-option4"
+                    name="q35"
+                    value="تيانا"
+                  />
+                  <label for="q35-option4">تيانا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q36">
+              <div class="question">36. بطلة فيلم Brave وتُجيد الرماية؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q36-option1"
+                    name="q36"
+                    value="مولان"
+                  />
+                  <label for="q36-option1">مولان</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q36-option2"
+                    name="q36"
+                    value="ميريدا"
+                  />
+                  <label for="q36-option2">ميريدا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q36-option3"
+                    name="q36"
+                    value="أرييل"
+                  />
+                  <label for="q36-option3">أرييل</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q36-option4"
+                    name="q36"
+                    value="سندريلا"
+                  />
+                  <label for="q36-option4">سندريلا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q37">
+              <div class="question">
+                37. شخصية كرتونية تعمل طباخة وتفتح مطعمها الخاص؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q37-option1"
+                    name="q37"
+                    value="تيانا"
+                  />
+                  <label for="q37-option1">تيانا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q37-option2"
+                    name="q37"
+                    value="ريمي"
+                  />
+                  <label for="q37-option2">ريمي</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q37-option3"
+                    name="q37"
+                    value="أورورا"
+                  />
+                  <label for="q37-option3">أورورا</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q37-option4" name="q37" value="ميغ" />
+                  <label for="q37-option4">ميغ</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q38">
+              <div class="question">38. أخت ملكة الجليد في فيلم Frozen؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q38-option1"
+                    name="q38"
+                    value="ميريدا"
+                  />
+                  <label for="q38-option1">ميريدا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q38-option2"
+                    name="q38"
+                    value="مولان"
+                  />
+                  <label for="q38-option2">مولان</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q38-option3" name="q38" value="آنا" />
+                  <label for="q38-option3">آنا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q38-option4"
+                    name="q38"
+                    value="سندريلا"
+                  />
+                  <label for="q38-option4">سندريلا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q39">
+              <div class="question">39. أميرة تقع في نوم عميق بسبب تعويذة؟</div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q39-option1"
+                    name="q39"
+                    value="سندريلا"
+                  />
+                  <label for="q39-option1">سندريلا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q39-option2"
+                    name="q39"
+                    value="أورورا"
+                  />
+                  <label for="q39-option2">أورورا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q39-option3"
+                    name="q39"
+                    value="إلسا"
+                  />
+                  <label for="q39-option3">إلسا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q39-option4"
+                    name="q39"
+                    value="تيانا"
+                  />
+                  <label for="q39-option4">تيانا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="question-container" id="q40">
+              <div class="question">
+                40. فتاة شجاعة تتحدى الجليد لإنقاذ أختها؟
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q40-option1"
+                    name="q40"
+                    value="ميريدا"
+                  />
+                  <label for="q40-option1">ميريدا</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q40-option2" name="q40" value="آنا" />
+                  <label for="q40-option2">آنا</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="q40-option3"
+                    name="q40"
+                    value="ياسمين"
+                  />
+                  <label for="q40-option3">ياسمين</label>
+                </div>
+                <div class="option">
+                  <input type="radio" id="q40-option4" name="q40" value="ميغ" />
+                  <label for="q40-option4">ميغ</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="navigation-buttons">
+              <button type="button" class="nav-btn" id="prev-btn" disabled>
+                السابق
+              </button>
+              <button type="button" class="nav-btn" id="next-btn">
+                التالي
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="questions-nav">
+          <div class="nav-title">أسئلة الاختبار</div>
+          <div class="question-numbers" id="question-numbers"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-modal" id="result-modal">
+      <div class="result-content">
+        <h2 class="result-title">نتيجة الاختبار</h2>
+        <div class="circle-progress">
+          <svg viewBox="0 0 100 100">
+            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+            <circle
+              class="circle-fill"
+              cx="50"
+              cy="50"
+              r="45"
+              style="stroke-dashoffset: 440"
+            ></circle>
+          </svg>
+          <div class="progress-text-result" id="progress-text-result">0%</div>
+        </div>
+        <div class="score-text" id="score-text">درجتك: 0 من 40</div>
+        <div class="result-actions">
+          <button class="action-btn review-btn" id="review-btn">
+            مراجعة الإجابات
+          </button>
+          <button class="action-btn close-btn" id="close-btn">إغلاق</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
