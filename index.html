@@ -13,6 +13,33 @@
         .result { margin-top: 20px; font-size: 18px; font-weight: bold; }
     </style>
 </head>
+
+<script src="script.js">
+    function checkAnswers() {
+        let score = 0;
+        for (let i = 1; i <= answers.length; i++) {
+            const options = document.getElementsByName('q' + i);
+            for (let opt of options) {
+                if (opt.checked && opt.value === answers[i - 1]) {
+                    score++;
+                    opt.parentElement.style.color = 'green';
+                } else if (opt.checked) {
+                    opt.parentElement.style.color = 'red';
+                }
+            }
+        }   
+    }   
+    let message = '';
+    if (score === answers.length) {
+        message = 'مبروك عليك أنت الأكثر ذكاء في الكويز';
+    } else if (score >= answers.length * 0.7) {
+        message = 'ممتاز أنت في المرتبة الأولى';
+    } else {
+        message = 'لم تحصل على علامة كافية للمرتبة الأولى';
+    }
+    document.getElementById('result').textContent = message;
+</script>
+
 <body>
     <h1>كويز شخصيات نسائية</h1>
     <form id="quizForm">
